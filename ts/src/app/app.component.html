@@ -2,38 +2,109 @@
   <app-nav-menu class="w-[16%] min-h-screen"></app-nav-menu>
   <section class="w-[93%] flex flex-col">
     <app-header></app-header>
-    <!-- TO DO: Implementar sessão de vídeo + acões + detalhes -->
-    <!-- <div class="w-full p-11">
-      <div>
+
+    <div class="w-full p-11 flex justify-between">
+      <div class="flex flex-col gap-5 w-[49rem]">
         <h2 class="font-roboto text-xl font-black text-primary">
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP
         </h2>
+        <div
+          class="bg-video-back w-[783px] h-[439px] bg-cover bg-center text-white rounded overflow-hidden"
+        >
+          <div
+            class="flex flex-col pb-14 px-8 pt-9 justify-between h-full bg-[#8D350680]"
+          >
+            <h2 class="text-2xl font-black w-full">
+              Análise sensorial de preparações funcionais desenvolvidas para
+              escolares entre 09 e 15 anos, do município de <br />
+              Campinas/SP
+            </h2>
+            <div class="flex w-full gap-5">
+              <div
+                class="border-2 border-primary border-spacing-8 rounded-full"
+              >
+                <div
+                  class="relative w-16 h-16 overflow-hidden rounded-full m-1"
+                >
+                  <img
+                    class="absolute scale-[2] top-6 left-0 object-cover object-top"
+                    src="/assets/images/imageVideo.png"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <h3 class="text-3xl font-black">Beatriz Christiane Melo</h3>
+                <p class="text-xl">FCA / Universidade Estadual de Campinas</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <aside>
-        <div>
-          <div><button></button><button></button><button></button></div>
-          <p>Como citar este trabalho?</p>
-          <div>
-            <h4>Detalhes</h4>
+      <aside class="w-72 h-full flex flex-col justify-end gap-3">
+        <div class="flex w-full justify-end items-center gap-2">
+          <button
+            class="bg-primary flex text-white py-[6px] px-3 rounded items-center justify-center gap-1"
+          >
+            <img src="assets/icons/download.png" alt="" />
+            <span>Download</span>
+          </button>
+
+          <button class="bg-primary text-white py-2 px-3 rounded">
+            <img src="assets/icons/favoritar.png" alt="" class="w-5 h-5" />
+          </button>
+          <button class="bg-primary text-white py-2 px-3 rounded">
+            <img src="assets/icons/doi.png" alt="" class="w-5 h-5" />
+          </button>
+        </div>
+        <p class="text-sm text-primary font-roboto uppercase text-end">
+          Como citar este trabalho?
+        </p>
+        <div
+          class="w-full border border-[#ECECEC] h-full overflow-y-scroll max-h-[441px]"
+        >
+          <h4 class="w-full bg-tertiary text-xl font-medium px-4 py-3">
+            Detalhes
+          </h4>
+          <div class="font-quick text-sm p-4 flex flex-col gap-6">
             <div>
-              <p>Tipo de Apresentação: Pôster</p>
-              <p>Eixo temático: <span>Alimentação e saúde (AS)</span></p>
+              <p>Tipo de Apresentação: <span class="font-bold">Pôster</span></p>
+              <p>
+                Eixo temático:
+                <span class="font-bold">Alimentação e saúde (AS)</span>
+              </p>
               <p>
                 Palavras-chaves:
-                <span>Alimentos funcionais, alimentação escolar.</span>
+                <span class="font-bold"
+                  >Alimentos funcionais, alimentação escolar.</span
+                >
               </p>
+            </div>
 
-              <p>Autores:</p>
-
-              Galileo Galilei¹ Berta Lange de Morretes² Isaac Newton³ Cesar
-              Lattes¹ Stephen Hawking⁴ ¹Universidade Estadual de Campinas
-              ²Universidade de São Paulo ³Instituto Nacional de Pesquisas
-              Espaciais ⁴Universidade Federal do Rio de Janeiro
+            <div>
+              <p class="font-bold">Autores:</p>
+              <p>Galileo Galilei¹</p>
+              <p>Berta Lange de Morretes²</p>
+              <p>Isaac Newton³</p>
+              <p>Cesar Lattes¹</p>
+              <p>Stephen Hawking⁴</p>
+            </div>
+            <div class="text-xs font-normal">
+              <p>¹Universidade Estadual de Campinas</p>
+              <p>²Universidade de São Paulo</p>
+              <p>³Instituto Nacional de Pesquisas Espaciais</p>
+              <p>⁴Universidade Federal do Rio de Janeiro</p>
+            </div>
+            <div class="text-xs mt-96">
+              <p>¹Universidade Estadual de Campinas</p>
+              <p>²Universidade de São Paulo</p>
+              <p>³Instituto Nacional de Pesquisas Espaciais</p>
+              <p>⁴Universidade Federal do Rio de Janeiro</p>
             </div>
           </div>
         </div>
       </aside>
-    </div> -->
+    </div>
   </section>
 </div>

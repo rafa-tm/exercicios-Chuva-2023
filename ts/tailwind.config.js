@@ -22,6 +22,10 @@ module.exports = {
         'secondary': '#FFB354',
         'tertiary': "#FDF1EB",
       }),
+      backgroundImage: theme => ({
+        'video-back': "url('assets/images/backgroundVideo.png')",
+
+      }),
 
     },
   },
