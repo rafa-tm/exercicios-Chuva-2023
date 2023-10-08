@@ -1,6 +1,6 @@
 <div class="flex flex-row">
-  <app-nav-menu class="w-[16%] min-h-screen"></app-nav-menu>
-  <section class="w-[93%] flex flex-col">
+  <app-nav-menu class="relative w-[16%] min-h-screen"></app-nav-menu>
+  <section class="w-[84%] flex flex-col">
     <app-header></app-header>
 
     <div class="w-full p-11 flex justify-between">
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <aside class="w-72 h-full flex flex-col justify-end gap-3">
+      <aside class="w-[242px] h-full flex flex-col justify-end gap-3">
         <div class="flex w-full justify-end items-center gap-2">
           <button
             class="bg-primary flex text-white py-[6px] px-3 rounded items-center justify-center gap-1"
@@ -106,5 +106,8 @@
         </div>
       </aside>
     </div>
+    <app-resume class="px-11"></app-resume>
+    <app-discussions class="px-11 mt-7"></app-discussions>
+    <app-footer class="mt-12"></app-footer>
   </section>
 </div>
