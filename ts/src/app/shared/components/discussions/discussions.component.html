@@ -49,7 +49,7 @@
           <label class="text-primary font-bold text-lg" for="assunto">
             Assunto</label
           ><input
-            class="p-[10px] border border-[#CCC] rounded"
+            class="subject p-[10px] border border-[#CCC] rounded"
             type="text"
             name="assunto"
             id="assunto"
@@ -71,6 +71,7 @@
             class="w-full bg-[#EAF1F2] rounded-b overflow-hidden flex justify-end"
           >
             <button
+              type="submit"
               class="px-16 py-2 bg-gradient-to-b from-secondary to-primary font-bold text-white"
             >
               Enviar
@@ -89,6 +90,7 @@
         email assim que seu tópico for respondido!
       </p>
       <button
+        type="button"
         class="text-primary text-lg mt-4 font-quick underline font-medium"
       >
         Descubra outros trabalhos!
@@ -107,6 +109,7 @@
           <path d="M0 1H1034" stroke="#E7E7E7" />
         </svg>
         <button
+          type="button"
           (click)="newTopic()"
           class="btn-create-topic absolute px-3 py-2 flex items-center gap-1 text-white text-[15px] font-bold bg-gradient-to-b from-secondary to-primary rounded"
         >
@@ -149,8 +152,9 @@
       </div>
     </div>
     <!-- cometários Já existentes -->
-    <div class="flex flex-col gap-4 mt-4">
+    <div class="comments-container flex flex-col gap-4 mt-4">
       <app-card-topic
+        class="answered-topic"
         assunto="Assunto da pergunta aparece aqui"
         autor="Carlos Henrique Santos"
         texto="Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..."

@@ -1,5 +1,5 @@
 <div
-  class="answered-topic w-full relative border border-[#E7E7E7] flex flex-col py-4 px-6 gap-2 shadow-sm rounded"
+  class="w-full relative border border-[#E7E7E7] flex flex-col py-4 px-6 gap-2 shadow-sm rounded"
 >
   <div>
     <h4 class="ops-topic-subject font-bold text-primary">{{ assunto }}</h4>
@@ -12,11 +12,13 @@
     </p>
   </div>
   <div class="w-full flex gap-4 text-sm items-center text-[#757575]">
-    <button class="material-icons text-primary">more_vert</button>
-    <button class="material-icons bg-primary px-2 py-1 text-white rounded">
+    <a class="material-icons text-primary cursor-pointer">more_vert</a>
+    <a
+      class="material-icons bg-primary px-2 py-1 text-white rounded cursor-pointer"
+    >
       favorite
-    </button>
-    <button>{{ numeroLikes }} like</button>
-    <button>{{ numeroRespostas }} resposta</button>
+    </a>
+    <a>{{ numeroLikes }} like</a>
+    <a>{{ numeroRespostas }} resposta</a>
   </div>
 </div>

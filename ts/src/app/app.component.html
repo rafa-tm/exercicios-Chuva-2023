@@ -3,12 +3,36 @@
   <section class="w-[84%] flex flex-col">
     <app-header></app-header>
 
-    <div class="w-full p-11 flex justify-between">
-      <div class="flex flex-col gap-5 w-[49rem]">
-        <h2 class="font-roboto text-xl font-black text-primary">
+    <div class="w-full px-11 pt-5 pb-7 flex flex-col justify-between gap-2">
+      <div class="w-full flex justify-between">
+        <h2 class="max-w-[700px] font-roboto text-xl font-black text-primary">
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP
         </h2>
+        <div class="flex flex-col gap-3">
+          <div class="flex w-full justify-end items-center gap-2">
+            <a
+              class="bg-primary flex text-white py-[6px] px-3 rounded items-center justify-center gap-1 cursor-pointer"
+            >
+              <img src="assets/icons/download.png" alt="" />
+              <span>Download</span>
+            </a>
+
+            <a class="bg-primary text-white py-2 px-3 rounded cursor-pointer">
+              <img src="assets/icons/favoritar.png" alt="" class="w-5 h-5" />
+            </a>
+            <a class="bg-primary text-white py-2 px-3 rounded cursor-pointer">
+              <img src="assets/icons/doi.png" alt="" class="w-5 h-5" />
+            </a>
+          </div>
+          <p
+            class="text-sm text-primary font-roboto uppercase text-end cursor-pointer"
+          >
+            Como citar este trabalho?
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-between">
         <div
           class="bg-video-back w-[783px] h-[439px] bg-cover bg-center text-white rounded overflow-hidden"
         >
@@ -41,70 +65,54 @@
             </div>
           </div>
         </div>
-      </div>
-      <aside class="w-[242px] h-full flex flex-col justify-end gap-3">
-        <div class="flex w-full justify-end items-center gap-2">
-          <button
-            class="bg-primary flex text-white py-[6px] px-3 rounded items-center justify-center gap-1"
+        <aside class="w-[242px] h-full flex flex-col justify-end">
+          <div
+            class="w-full border border-[#ECECEC] h-full overflow-y-scroll max-h-[441px]"
           >
-            <img src="assets/icons/download.png" alt="" />
-            <span>Download</span>
-          </button>
+            <h4 class="w-full bg-tertiary text-xl font-medium px-4 py-3">
+              Detalhes
+            </h4>
+            <div class="font-quick text-sm p-4 flex flex-col gap-6">
+              <div>
+                <p>
+                  Tipo de Apresentação: <span class="font-bold">Pôster</span>
+                </p>
+                <p>
+                  Eixo temático:
+                  <span class="font-bold">Alimentação e saúde (AS)</span>
+                </p>
+                <p>
+                  Palavras-chaves:
+                  <span class="font-bold"
+                    >Alimentos funcionais, alimentação escolar.</span
+                  >
+                </p>
+              </div>
 
-          <button class="bg-primary text-white py-2 px-3 rounded">
-            <img src="assets/icons/favoritar.png" alt="" class="w-5 h-5" />
-          </button>
-          <button class="bg-primary text-white py-2 px-3 rounded">
-            <img src="assets/icons/doi.png" alt="" class="w-5 h-5" />
-          </button>
-        </div>
-        <p class="text-sm text-primary font-roboto uppercase text-end">
-          Como citar este trabalho?
-        </p>
-        <div
-          class="w-full border border-[#ECECEC] h-full overflow-y-scroll max-h-[441px]"
-        >
-          <h4 class="w-full bg-tertiary text-xl font-medium px-4 py-3">
-            Detalhes
-          </h4>
-          <div class="font-quick text-sm p-4 flex flex-col gap-6">
-            <div>
-              <p>Tipo de Apresentação: <span class="font-bold">Pôster</span></p>
-              <p>
-                Eixo temático:
-                <span class="font-bold">Alimentação e saúde (AS)</span>
-              </p>
-              <p>
-                Palavras-chaves:
-                <span class="font-bold"
-                  >Alimentos funcionais, alimentação escolar.</span
-                >
-              </p>
-            </div>
-
-            <div>
-              <p class="font-bold">Autores:</p>
-              <p>Galileo Galilei¹</p>
-              <p>Berta Lange de Morretes²</p>
-              <p>Isaac Newton³</p>
-              <p>Cesar Lattes¹</p>
-              <p>Stephen Hawking⁴</p>
-            </div>
-            <div class="text-xs font-normal">
-              <p>¹Universidade Estadual de Campinas</p>
-              <p>²Universidade de São Paulo</p>
-              <p>³Instituto Nacional de Pesquisas Espaciais</p>
-              <p>⁴Universidade Federal do Rio de Janeiro</p>
-            </div>
-            <div class="text-xs mt-96">
-              <p>¹Universidade Estadual de Campinas</p>
-              <p>²Universidade de São Paulo</p>
-              <p>³Instituto Nacional de Pesquisas Espaciais</p>
-              <p>⁴Universidade Federal do Rio de Janeiro</p>
+              <div>
+                <p class="font-bold">Autores:</p>
+                <p>Galileo Galilei¹</p>
+                <p>Berta Lange de Morretes²</p>
+                <p>Isaac Newton³</p>
+                <p>Cesar Lattes¹</p>
+                <p>Stephen Hawking⁴</p>
+              </div>
+              <div class="text-xs font-normal">
+                <p>¹Universidade Estadual de Campinas</p>
+                <p>²Universidade de São Paulo</p>
+                <p>³Instituto Nacional de Pesquisas Espaciais</p>
+                <p>⁴Universidade Federal do Rio de Janeiro</p>
+              </div>
+              <div class="text-xs mt-96">
+                <p>¹Universidade Estadual de Campinas</p>
+                <p>²Universidade de São Paulo</p>
+                <p>³Instituto Nacional de Pesquisas Espaciais</p>
+                <p>⁴Universidade Federal do Rio de Janeiro</p>
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
     <app-resume class="px-11"></app-resume>
     <app-discussions class="px-11 mt-7"></app-discussions>
