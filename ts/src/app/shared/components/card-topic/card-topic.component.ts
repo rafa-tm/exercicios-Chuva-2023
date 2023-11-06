@@ -10,6 +10,7 @@ export class CardTopicComponent implements OnInit {
   @Input() texto: string;
   @Input() numeroLikes: string;
   @Input() numeroRespostas: string;
+  showComments = false;
 
   constructor() {
     this.assunto = '';
@@ -20,4 +21,10 @@ export class CardTopicComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  toggleComments(): void {
+    if (Number(this.numeroRespostas) > 1) {
+      this.showComments = !this.showComments;
+    }
+  }
 }

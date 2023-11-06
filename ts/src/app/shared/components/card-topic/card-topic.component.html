@@ -1,24 +1,118 @@
 <div
-  class="w-full relative border border-[#E7E7E7] flex flex-col py-4 px-6 gap-2 shadow-sm rounded"
+  class="w-full relative border border-[#E7E7E7] flex flex-col gap-2 shadow-sm rounded cursor-pointer font-quick"
+  (click)="toggleComments()"
 >
-  <div>
-    <h4 class="ops-topic-subject font-bold text-primary">{{ assunto }}</h4>
-    <p class="font-medium text-[#5C5C5C]">{{ autor }}</p>
-  </div>
+  <div class="w-full flex flex-col px-6 gap-2 py-4">
+    <div>
+      <h4 class="ops-topic-subject font-bold text-primary">{{ assunto }}</h4>
+      <p class="font-medium text-[#5C5C5C]">{{ autor }}</p>
+    </div>
 
-  <div class="w-full h-16 text-[#4D4D4D]">
-    <p>
-      {{ texto }}
-    </p>
+    <div class="w-full h-16 text-[#4D4D4D]">
+      <p>
+        {{ texto }}
+      </p>
+    </div>
+    <div class="w-full flex gap-4 text-sm items-center text-[#757575]">
+      <a class="material-icons text-primary cursor-pointer">more_vert</a>
+      <a
+        class="material-icons bg-primary px-2 py-1 text-white rounded cursor-pointer"
+      >
+        favorite
+      </a>
+      <a>{{ numeroLikes }} {{ numeroLikes === "1" ? "like" : "likes" }}</a>
+      <a
+        >{{ numeroRespostas }}
+        {{ numeroRespostas === "1" ? "resposta" : "respostas" }}
+      </a>
+    </div>
   </div>
-  <div class="w-full flex gap-4 text-sm items-center text-[#757575]">
-    <a class="material-icons text-primary cursor-pointer">more_vert</a>
-    <a
-      class="material-icons bg-primary px-2 py-1 text-white rounded cursor-pointer"
+  <div *ngIf="showComments">
+    <div
+      class="bg-[#F8F8F8] flex flex-col w-full gap-[10px] px-6 py-5 border border-[#E7E7E7]"
     >
-      favorite
-    </a>
-    <a>{{ numeroLikes }} like</a>
-    <a>{{ numeroRespostas }} resposta</a>
+      <div class="w-full flex justify-between items-center">
+        <p class="font-bold text-[#5C5C5C]">Adriano da Silva</p>
+        <div class="flex gap-8 items-center">
+          <h4 class="ops-topic-subject font-bold text-primary">Autor</h4>
+          <img src="assets/icons/autor.png" alt="" width="30" height="23" />
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-justify pr-14 font-normal">
+          Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo resente relato inscreve-se no campo da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-white flex flex-col w-full gap-[10px] px-6 py-5 border border-[#E7E7E7]"
+    >
+      <div class="w-full flex justify-between items-center">
+        <p class="font-bold text-[#5C5C5C]">Carlos Henrique Santos</p>
+        <!-- <div class="flex gap-8 items-center">
+          <h4 class="ops-topic-subject font-bold text-primary">Autor</h4>
+          <img src="assets/icons/autor.png" alt="" width="30" height="23" />
+        </div> -->
+      </div>
+      <div class="w-full flex flex-col gap-5">
+        <p class="text-justify pr-14">
+          Consegui entender melhor agora! Parece que a variação da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo.
+        </p>
+        <p class="text-justify pr-14">
+          Obrigada pela resposta, muito interessante o seu trabalho!
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[#F8F8F8] flex flex-col w-full gap-[10px] px-6 py-5 border border-[#E7E7E7]"
+    >
+      <div class="w-full flex justify-between items-center">
+        <p class="font-bold text-[#5C5C5C]">Carmila Ferreira Andrade</p>
+        <div class="flex gap-8 items-center">
+          <h4 class="ops-topic-subject font-bold text-primary">Coautor</h4>
+          <img src="assets/icons/autor.png" alt="" width="30" height="23" />
+        </div>
+      </div>
+      <div class="w-full flex flex-col gap-5">
+        <p class="text-justify pr-14">
+          Também ínteressante lembrar que o relato inscreve-se no campo da
+          análise da dimensão e impacto de processo formativo situado impacto de
+          processo formativo processo resente relato inscreve-se no campo da
+          análise da dimensão e impacto de processo formativo situado impacto de
+          processo formativo processo.
+        </p>
+        <p class="text-justify pr-14">
+          Situado impacto de processo formativo processo resente relato
+          inscreve-se no campo da análise da dimensão e impacto de processo
+          formativo situado impacto de processo formativo processo.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bg-[#F8F8F8] flex flex-col w-full gap-[10px] px-6 py-5 border border-[#E7E7E7]"
+    >
+      <div class="w-full flex justify-between items-center">
+        <p class="font-bold text-[#5C5C5C]">Ana Carolina</p>
+        <div class="flex gap-8 items-center">
+          <h4 class="ops-topic-subject font-bold text-primary">Coautor</h4>
+          <img src="assets/icons/autor.png" alt="" width="30" height="23" />
+        </div>
+      </div>
+      <div class="w-full">
+        <p class="text-justify pr-14">
+          Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo resente relato inscreve-se no campo da análise da
+          dimensão e impacto de processo formativo situado impacto de processo
+          formativo processo.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
